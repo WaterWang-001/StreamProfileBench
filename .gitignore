@@ -1,0 +1,9 @@
+results/
+metric_excels/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.venv/
+venv/
+.env
