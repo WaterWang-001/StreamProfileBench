@@ -5,13 +5,6 @@ Each task asks an LLM to (a) maintain a rolling persona summary from a stream
 of a user's posts, and (b) predict which tags from a curated candidate pool the
 user will engage with in the next time window.
 
-The benchmark evaluates two coupled abilities:
-
-- **Plasticity** — picking up *newly emerging* interests (`Recall_Novelty`).
-- **Stability** — retaining *persisting* interests (`Recall_Stability`).
-
-It also probes robustness against four classes of distractors (decay,
-peer-cluster, viral, random).
 
 ## Repository layout
 
@@ -147,7 +140,7 @@ Aggregation uses a two-level macro average: within-user mean across steps,
 then macro mean across users. F1^NS is computed per user (HM of the user-level
 R_N and R_S) and then macro-averaged.
 
-## Leaderboard (paper, Table 4)
+## Leaderboard
 
 Macro-averaged Recall (R̄) and F1^NS across the five Chinese social media
 platforms. **Bold** = best, _italic_ = second-best. XHS denotes Xiaohongshu.
@@ -210,16 +203,4 @@ This release uses anonymized identifiers:
 
 If you find any residual PII please open an issue.
 
-## Citation
 
-```bibtex
-@misc{streamprofilebench2026,
-  title  = {StreamProfileBench: A Benchmark for Fine-Grained User Profile Inference in Real-World Streaming Scenarios},
-  author = {Wang, Sizhe and Duan, Feiyu and Zhang, Liwen and Wei, Zhongyu},
-  year   = {2026},
-}
-```
-
-## License
-
-Apache License 2.0. See [LICENSE](LICENSE).
