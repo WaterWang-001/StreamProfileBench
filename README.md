@@ -1,9 +1,24 @@
-# StreamProfileBench
+<h1 align="center">
+  StreamProfileBench: A Benchmark for Fine-Grained User Profile Inference in Real-World Streaming Scenarios
+</h1>
 
-Streaming user-interest profiling benchmark for Chinese social media platforms.
-Each task asks an LLM to (a) maintain a rolling persona summary from a stream
-of a user's posts, and (b) predict which tags from a curated candidate pool the
+<p align="center">
+  <a href="https://arxiv.org/abs/2605.25758">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2605.25758-b31b1b.svg">
+  </a>
+  <a href="https://huggingface.co/datasets/WaterWang-001/StreamProfileBench">
+    <img alt="Hugging Face Dataset" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging_Face-Dataset-blue">
+  </a>
+</p>
+
+Streaming user-interest profiling benchmark for Chinese social media platforms. 
+Each task asks an LLM to (a) maintain a rolling persona summary from a stream 
+of a user's posts, and (b) predict which tags from a curated candidate pool the 
 user will engage with in the next time window.
+
+## 🔗 Quick Links
+- **Paper:** [StreamProfileBench: A Benchmark for Fine-Grained User Profile Inference in Real-World Streaming Scenarios](https://arxiv.org/abs/2605.25758)
+- **Dataset:** [WaterWang-001/StreamProfileBench on Hugging Face](https://huggingface.co/datasets/WaterWang-001/StreamProfileBench)
 
 
 ## Repository layout
